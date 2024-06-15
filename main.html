@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banker's Algorithm</h1>
+        <form id="inputForm">
+            <label for="totalResources">Total Resources (comma separated):</label>
+            <input type="text" id="totalResources" required>
+
+            <label for="maxDemand">Max Demand Matrix (comma separated rows):</label>
+            <textarea id="maxDemand" required></textarea>
+
+            <label for="allocated">Allocated Resources Matrix (comma separated rows):</label>
+            <textarea id="allocated" required></textarea>
+
+            <button type="submit">Check Safe State</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
