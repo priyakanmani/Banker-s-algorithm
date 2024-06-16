@@ -1,5 +1,4 @@
 
-
 document.getElementById('inputForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -34,8 +33,9 @@ document.getElementById('inputForm').addEventListener('submit', function (e) {
     resultDiv.textContent = isSafe ? 'The system is in a safe state.' : 'The system is not in a safe state.';
 
     // Display sequence if safe
+    const sequenceDiv = document.getElementById('sequence');
+    sequenceDiv.innerHTML = ''; // Clear previous sequence
     if (isSafe) {
-        const sequenceDiv = document.getElementById('sequence');
         sequenceDiv.innerHTML = `<h3>Safe Sequence</h3><pre>${sequence.join(' -> ')}</pre>`;
     }
 });
